@@ -67,7 +67,7 @@ class List:
             cur = cur.next
         return False
 
-    def Flip(self):
+    def Flip(self): # Перевернуть список
         if self.head == None:
             return
         cur = next = before = None
