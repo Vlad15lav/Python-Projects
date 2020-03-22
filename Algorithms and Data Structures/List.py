@@ -67,6 +67,18 @@ class List:
             cur = cur.next
         return False
 
+    def Flip(self):
+        if self.head == None:
+            return
+        cur = next = before = None
+        cur = self.head
+        while cur != None:
+            next = cur.next
+            cur.next = before
+            before = cur
+            cur = next
+        self.head = before
+
     def Remove(self, a): # Удаление первого элемена по вхождению
         cur = self.head
         before = cur
@@ -153,6 +165,8 @@ print(test_list.isExist(4))
 test_list.Print()
 test_list.RemoveAll(4)
 print(test_list.isExist(4))
+test_list.Print()
+test_list.Flip()
 test_list.Print()
 print(test_list.isEmpty())
 test_list.Clear()
