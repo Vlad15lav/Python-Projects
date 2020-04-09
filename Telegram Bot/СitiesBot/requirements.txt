@@ -1,0 +1,3 @@
+pyTelegramBotAPI
+opencv-python
+numpy
