@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup as BS
 import telebot
 from telebot import types
 
-TOKEN = '1144242422:AAFTVCf6jzmL_Q_7hH-1BI5Z6BriuyI2Jww' # Token из Botfather
+TOKEN = '' # Token из Botfather
 url_letters = 'http://www.1000mest.ru/' # Сайт для парсинга
 
 # Настройки и функции для бота
